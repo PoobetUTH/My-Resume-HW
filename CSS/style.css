@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+section {
+    scroll-margin-top: 100px; 
+}
+
+#home {
+    margin-top: 0; 
+}
+
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffc107 !important;
+    font-weight: 600;
+}
+
+.home-section {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    padding: 150px 20px 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.profile-img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffc107;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5); 
+    transition: transform 0.3s ease-in-out;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+}
+.lead {
+    font-size: 1.1rem; 
+    color: #dcdcdc;
+    margin-top: 15px;
+}
+.home-hr {
+    border-top: 2px solid #ffc107;
+    width: 40%; 
+    margin: 20px auto;
+}
+.home-section h1 {
+    font-size: 2.5rem; 
+}
+.institute-link:hover {
+    color: #fff !important;
+}
+
+.about-section, .education-section, .skills-section, .contact-section {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 40px 30px; 
+    margin: 80px auto; 
+    max-width: 900px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+.about-section p, .education-section p, .skills-section p, .contact-section p, .contact-section li {
+    font-size: 1rem; 
+    color: #c0c0c0;
+}
+.about-section .fs-5 {
+    font-size: 1.1rem !important; 
+}
+
+.text-secondary{
+    color: #e7e6e6 !important;
+}
+
+.card-dark {
+    background-color: #2a2a2a;
+    border: 1px solid rgba(255, 193, 7, 0.5); 
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+.card-dark:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.2);
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1rem; 
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-list {
+    list-style-position: inside;
+    padding-left: 0;
+}
+.contact-list li {
+    list-style: decimal; 
+    padding-left: 0.5rem;
+    color: #e0e0e0;
+}
+
+footer {
+    background-color: #181818;
+    color: #e0e0e0;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* ปรับ scroll-margin-top สำหรับมือถือ */
+    section {
+        scroll-margin-top: 80px; 
+    }
+    .home-section {
+        padding: 120px 15px 80px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .home-section h1 {
+        font-size: 2rem;
+    }
+    .about-section, .education-section, .skills-section, .contact-section {
+        padding: 30px 20px;
+        margin: 50px auto; 
+    }
+    .contact-list li {
+        font-size: 0.95rem;
+    }
+}
